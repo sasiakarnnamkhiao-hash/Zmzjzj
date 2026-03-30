@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Ray - Service & Consignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mitr: ['Mitr', 'sans-serif'],
+                        fredoka: ['Fredoka', 'sans-serif'],
+                    },
+                    colors: {
+                        'game-blue': '#001A3D',
+                        'game-black': '#000510',
+                        'neon-blue': '#0044FF',
+                        'accent-soft': '#A5B4FC'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000510;
+            background: linear-gradient(135deg, #000C24 0%, #000510 100%);
+            margin: 0;
+            padding: 15px;
+            min-height: 100vh;
+        }
+        .game-card {
+            background: linear-gradient(180deg, #001A3D 0%, #000510 100%);
+            border: 1px solid rgba(0, 68, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        .text-3d-title {
+            color: #FFFFFF;
+            text-shadow: 2px 2px 0px #0044FF;
+        }
+        .score-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 11px;
+        }
+        .star { position: absolute; fill: currentColor; opacity: 0.3; z-index: 0; }
+    </style>
+</head>
+<body class="font-mitr text-white antialiased">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+
+        <div class="game-card rounded-2xl p-6 flex flex-col items-center text-center">
+            <h1 class="font-fredoka text-5xl text-3d-title mb-2">TA RAY</h1>
+            <p class="text-accent-soft text-xs mb-4 uppercase tracking-widest">Consignment Service</p>
+            <div class="bg-game-black/80 p-4 rounded-xl border border-neon-blue/50 w-full">
+                <p class="text-xs text-gray-300">
+                    ร้าน Ta Ray รับฝากขาย | รับทำป้ายฝากขาย ป้ายเรทต่างๆ ป้ายคิวอาร์ ปกเครดิต<br>
+                    <span class="text-white font-bold block mt-2 underline">ป้ายไอดียังไม่รับทำและรับหาไอดี</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="game-card rounded-2xl p-6 flex flex-col justify-center">
+            <h2 class="font-fredoka text-2xl text-center mb-4 text-neon-blue">SERVICES</h2>
+            <div class="space-y-2 text-sm">
+                <div class="score-row"><span>รับฝากขายไอดีเกม</span><span class="text-neon-blue">✔</span></div>
+                <div class="score-row"><span>รับทำป้ายเรทต่างๆ</span><span class="text-neon-blue">✔</span></div>
+                <div class="score-row"><span>รับทำป้ายคิวอาร์ / ปกเครดิต</span><span class="text-neon-blue">✔</span></div>
+                <div class="score-row"><span>บริการรับหาไอดี</span><span class="text-neon-blue">✔</span></div>
+            </div>
+        </div>
+
+        <div class="game-card rounded-2xl p-6">
+            <h2 class="font-fredoka text-2xl text-center mb-4 text-white">CONSIGNMENT RATES</h2>
+            <div class="grid grid-cols-2 gap-x-4">
+                <div class="space-y-1">
+                    <div class="score-row"><span>500-900</span><span class="text-accent-soft">15B</span></div>
+                    <div class="score-row"><span>1000-1499</span><span class="text-accent-soft">25B</span></div>
+                    <div class="score-row"><span>1500-1999</span><span class="text-accent-soft">30B</span></div>
+                    <div class="score-row"><span>2000-2499</span><span class="text-accent-soft">45B</span></div>
+                    <div class="score-row"><span>2500-4499</span><span class="text-accent-soft">57B</span></div>
+                    <div class="score-row"><span>4500-5999</span><span class="text-accent-soft">65B</span></div>
+                    <div class="score-row"><span>6000-7500</span><span class="text-accent-soft">80B</span></div>
+                    <div class="score-row"><span>7501-8500</span><span class="text-accent-soft">95B</span></div>
+                </div>
+                <div class="space-y-1">
+                    <div class="score-row"><span>8501-9999</span><span class="text-neon-blue">145B</span></div>
+                    <div class="score-row"><span>10,000+</span><span class="text-neon-blue">1.9%</span></div>
+                    <div class="score-row"><span>14,000+</span><span class="text-neon-blue">2.5%</span></div>
+                    <div class="score-row"><span>19,000+</span><span class="text-neon-blue">3.5%</span></div>
+                    <div class="score-row"><span>30,000+</span><span class="text-neon-blue">4.5%</span></div>
+                    <div class="score-row"><span>50,000+</span><span class="text-neon-blue">4.7%</span></div>
+                    <div class="score-row"><span>70,000+</span><span class="text-neon-blue">5%</span></div>
+                    <div class="score-row"><span>100,000</span><span class="text-neon-blue">5.5%</span></div>
+                </div>
+            </div>
+            <p class="text-[10px] text-center mt-3 text-red-400 italic font-bold">* คนที่เพิ่งใช้บริการจ่ายก่อนทุกกรณี</p>
+        </div>
+
+        <div class="game-card rounded-2xl p-6">
+            <h2 class="font-fredoka text-2xl text-center mb-4 text-white">FINDING ID RATES</h2>
+            <div class="space-y-1">
+                <div class="score-row"><span>1-900</span><span class="font-bold">40B</span></div>
+                <div class="score-row"><span>901-1900</span><span class="font-bold">57B</span></div>
+                <div class="score-row"><span>1901-3500</span><span class="font-bold">75B</span></div>
+                <div class="score-row"><span>3501-6000</span><span class="font-bold">90B</span></div>
+                <div class="score-row"><span>6001-9000</span><span class="font-bold">120B</span></div>
+                <div class="score-row"><span>9001-9,999</span><span class="font-bold">145B</span></div>
+                <div class="score-row"><span>10,000+++</span><span class="font-bold">170B</span></div>
+                <div class="score-row"><span>15,000+++</span><span class="font-bold">200B</span></div>
+                <div class="score-row"><span>30,000+++</span><span class="font-bold">250B</span></div>
+                <div class="score-row"><span>50,000+++</span><span class="font-bold">275B</span></div>
+                <div class="score-row"><span>100,000+++</span><span class="font-bold">300B</span></div>
+            </div>
+        </div>
+
+        <div class="game-card rounded-2xl p-6 md:col-span-2">
+            <h2 class="font-fredoka text-2xl text-center mb-4">รายละเอียดการฝากขาย</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-black/40 p-4 rounded-xl">
+                    <h3 class="text-neon-blue font-bold mb-2">📁 สิ่งที่ต้องเตรียม:</h3>
+                    <p class="text-xs text-gray-300 leading-loose">
+                        • รูปสกิน / เครื่องประดับ / สัตว์เลี้ยง<br>
+                        • รูปของในคลัง / ยอดเติม / แรงค์<br>
+                        • และจะมีแบบฟอร์มให้กรอก
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center space-y-3">
+                    <a href="https://docs.google.com/spreadsheets/d/1-kKlNjdrTLPbQ0ogYQt7Fb-QtCoLyMmX0H57NfEOMwA/edit?usp=drivesdk" class="bg-neon-blue text-center py-3 rounded-xl font-bold hover:scale-105 transition shadow-lg">เช็คคิวงานที่นี่</a>
+                    <a href="https://www.facebook.com/share/1HXq3wncat/?mibextid=wwXIfr" class="bg-white text-black text-center py-3 rounded-xl font-bold hover:scale-105 transition shadow-lg">ติดต่อ FACEBOOK</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Star Background Logic
+        document.querySelectorAll('.game-card').forEach(card => {
+            for(let i=0; i<10; i++) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('class', 'star');
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.style.width = `${Math.random() * 5 + 2}px`;
+                svg.style.top = `${Math.random() * 100}%`;
+                svg.style.left = `${Math.random() * 100}%`;
+                svg.innerHTML = '<circle cx="12" cy="12" r="10" />';
+                card.appendChild(svg);
+            }
+        });
+    </script>
+</body>
+</html>
